@@ -12,14 +12,14 @@ warnings.filterwarnings('ignore')
 
 # Pagina configuratie
 st.set_page_config(
-    page_title="dit is een test",
+    page_title="Walmart Sales Dashboard",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Titel
-st.title("📊 Walmart Sales Dashboard")
+st.title("📊 dit is een test")
 st.markdown("Interactief dashboard voor Walmart verkoopsgegevens")
 
 # Data laden
