@@ -73,7 +73,7 @@ filtered_df = df[
 ]
 
 # KPI's (Key Performance Indicators)
-st.subheader("📈 Belangrijkste Metreken")
+st.subheader("📈 Belangrijkste metingen")
 col1, col2, col3, col4 = st.columns(4)
 
 total_sales = (filtered_df['quantity_sold'] * filtered_df['unit_price']).sum()
@@ -195,7 +195,7 @@ with col2:
 
 # Geavanceerde analyse
 st.divider()
-st.subheader("📊 Geavanceerde Analyse")
+st.subheader(" Verdere Analyse")
 
 col1, col2 = st.columns(2)
 
@@ -317,7 +317,7 @@ if len(daily_sales_full) > 30:
     with col2:
         st.metric("📈 Verwachte Groei", f"{growth_rate:+.1f}%")
     with col3:
-        st.metric("🎯 Voorspellingsmethode", "Smoothed + Historisch")
+        st.metric("🎯 Voorspellingsmethode", "Historische data")
 
     
 
@@ -372,7 +372,7 @@ if len(low_stock_products) > 0:
 for rec in recommendations[:5]:  # Toon max 5 aanbevelingen
     st.info(rec)
 
-# 📊 Customer Segmentation
+#  Customer Segmentation
 st.subheader("👥 Klantsegmentatie")
 
 # Simple K-means clustering gebaseerd op inkomen en leeftijd
